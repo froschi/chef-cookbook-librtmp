@@ -1,7 +1,10 @@
 packages = Array.new
 
 case node[:lsb][:codename]
-when "lucid", "precise"
+when "precise"
+  include_recipe "libgcrypt"
+  include_recipe "libgnutls"
+
   packages |= %w/
     librtmp0
   /
