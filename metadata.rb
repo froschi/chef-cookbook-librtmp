@@ -7,5 +7,5 @@ version          "0.0.1"
 
 %w/ubuntu/.each { |os| supports os }
 
-depends          "libcrypt", ">= 0.0.1"
+depends          "libgcrypt", ">= 0.0.1"
 depends          "libgnutls", ">= 0.0.1"
